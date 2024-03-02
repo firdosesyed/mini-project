@@ -1,6 +1,6 @@
 var roll = document.querySelector(".circle");
 
-var main = document.querySelector("body")
+var main = document.querySelector(".main")
 
 main.addEventListener("mousemove", (dets) => {
 roll.style.top = dets. y+="px"
@@ -13,3 +13,10 @@ main.addEventListener("mouseleave", (dets) => {
 roll.style.opacity = "0"
 roll.style.transision = "0.1s"
 })
+
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector(".main"),
+    smooth: true
+});
+
